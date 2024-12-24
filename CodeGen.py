@@ -1,9 +1,8 @@
 import random
 
-# sta = "/storage/emulated/0/python/"+input("file name : ")+".txt"
-with open("C:\\Users\\Admin\\Desktop\\test.txt", "r") as f:
-    dc_word = f.readlines()
-list = [word.strip() for word in dc_word]
+dc_word = input("Words: ")
+list = [word.strip() for word in dc_word.split()]
+
 random.shuffle(list)
 cond = 12
 unq_l = []
